@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burger King Россия</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/418784af08.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Legal Popup -->
+    <div class="legal-popup" id="legalPopup">
+      <div class="popup-content">
+        <h3> Важное уведомление </h3>
+        <P>Этот сайт не является официальным сайтом Burger King и предназначен исключительно для учебных и тренировочных целей. Система оплаты не предусмотрена, а код рекомендательной системы представлен не будет — сайт служит лишь демонстрацией.
+<br>Мохамед А.Х.
+<br>БВТ222</P>
+        <button id="acceptBtn" class="popup-btn"> Я понимаю </button>
+      </div>
+    </div>
+
+    <header>
+      <div class="navbar-container">
+        <div class="left-part">
+          <ul>
+            <li>Меню</li>
+            <li>Акции</li>
+            <li>Рестораны</li>
+            <li>Бонусы</li>
+            <li>Карьера</li>
+            <li>Ещё</li>
+          </ul>
+        </div>
+        <div class="center-part">
+          <img src="./resources/logo.png" alt="logo" />
+        </div>
+        <div class="right-part">
+          <div class="choose-location">
+            <i class="fa-solid fa-location-dot"></i>
+            Проверить наличие
+            <a href="#">Выбрать локацию</a>
+          </div>
+          <div class="signup-btn">Регистрация</div>
+          <div class="cart-btn">
+            <i class="fa-solid fa-bag-shopping"></i> 0 ₽
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="main-container">
+        <!-- <div class="banner-section">
+          <img src="./resources/main-banner.png8" alt="Burger King Banner" class="main-banner">
+        </div> -->
+
+        <div class="menu-section">
+          <h2>Наше меню</h2>
+          <div class="menu-categories">
+            <div class="category active">Бургеры</div>
+            <div class="category">Картошка</div>
+            <div class="category">Напитки</div>
+            <div class="category">Десерты</div>
+            <div class="category">Завтраки</div>
+          </div>
+
+          <div class="menu-items">
+            <div class="menu-item">
+              <div class="item-image">
+                <img src="./resources/burger1.jpg.webp" alt="Воппер">
+              </div>
+              <div class="item-info">
+                <h3>Воппер</h3>
+                <p class="item-description">Легендарный бургер с сочной говяжьей котлетой, свежими овощами и фирменным соусом</p>
+                <p class="item-price">199 ₽</p>
+                <button class="add-to-cart">В корзину</button>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-image">
+                <img src="./resources/burger2.jpg.webp" alt="Чизбургер">
+              </div>
+              <div class="item-info">
+                <h3>Чизбургер</h3>
+                <p class="item-description">Классический бургер с сыром, свежим луком, кетчупом и горчицей</p>
+                <p class="item-price">99 ₽</p>
+                <button class="add-to-cart">В корзину</button>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-image">
+                <img src="./resources/burger3.jpg.webp" alt="Чикенбургер">
+              </div>
+              <div class="item-info">
+                <h3>Чикенбургер</h3>
+                <p class="item-description">Нежный куриный бургер с хрустящей котлетой и свежими овощами</p>
+                <p class="item-price">149 ₽</p>
+                <button class="add-to-cart">В корзину</button>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-image">
+                <img src="./resources/burger4.png" alt="Двойной Воппер">
+              </div>
+              <div class="item-info">
+                <h3>Брауни</h3>
+                <p class="item-description"></p>
+                <p class="item-price">7,5 мил ₽</p>
+                <button class="add-to-cart">В корзину</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI Features Section -->
+        <div class="ai-features-section">
+          <div class="ai-features-container">
+            <h2>Вот основное нововведение нашего проекта — система рекомендаций на основе искусственного интеллекта.
+Это инновационное решение делает процесс заказа умнее и удобнее благодаря алгоритмам AI.</h2>
+            <div class="ai-feature">
+              <div class="ai-feature-content">
+                <h3>AI-рекомендации по погоде</h3>
+                <p>Наша система анализирует текущие погодные условия и предлагает оптимальные блюда. В жаркую погоду вы получите рекомендацию освежающего напитка со льдом, а в холодную - горячего чая или кофе.</p>
+              </div>
+              <div class="ai-feature-icon">
+                <i class="fas fa-cloud-sun"></i>
+              </div>
+            </div>
+            
+            <div class="ai-feature">
+              <div class="ai-feature-icon">
+                <i class="fas fa-hands-praying"></i>
+              </div>
+              <div class="ai-feature-content">
+                <h3>Учет религиозных предпочтений</h3>
+                <p>Система автоматически определяет возможные религиозные ограничения по имени клиента. Например, если имя — Ахмед, система определит, что клиент, скорее всего, мусульманин, и не покажет блюда из свинины. Если имя указывает на индуиста — не будут рекомендоваться блюда из говядины. Всё происходит автоматически и с высокой точностью.</p>
+              </div>
+            </div>
+            
+            <div class="ai-feature">
+              <div class="ai-feature-content">
+                <h3>Персонализированные предложения</h3>
+                <p>На основе вашей истории заказов и предпочтений, AI создает индивидуальные рекомендации, которые экономят ваше время и помогают открывать новые любимые блюда. 
+Эти дополнения станут большим маркетинговым преимуществом и выгодным отличием от конкурентов.</p>
+              </div>
+              <div class="ai-feature-icon">
+                <i class="fas fa-user-cog"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="delivery-section">
+          <div class="delivery-info">
+            <h2>Доставка и самовывоз</h2>
+            <p>Заказывайте любимые бургеры с доставкой или забирайте в ближайшем ресторане</p>
+            <div class="delivery-options">
+              <button class="delivery-btn">Заказать доставку</button>
+              <button class="pickup-btn">Самовывоз</button>
+            </div>
+          </div>
+          <div class="delivery-image">
+            <img src="./resources/delivery.png" alt="Доставка Burger King">
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-columns">
+          <div class="footer-column">
+            <h3>О компании</h3>
+            <ul>
+              <li>О Burger King</li>
+              <li>Новости</li>
+              <li>Карьера</li>
+              <li>Франшиза</li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Помощь</h3>
+            <ul>
+              <li>Контакты</li>
+              <li>Частые вопросы</li>
+              <li>Обратная связь</li>
+              <li>Политика конфиденциальности</li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Мобильное приложение</h3>
+            <div class="app-stores">
+              <img src="./resources/app-store.jpeg" alt="App Store">
+              <img src="./resources/google-play.jpeg" alt="Google Play">
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h3>Мы в соцсетях</h3>
+            <div class="social-icons">
+              <i class="fa-brands fa-vk"></i>
+              <i class="fa-brands fa-telegram"></i>
+              <i class="fa-brands fa-odnoklassniki"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="left-footer">
+            <h1>Burger King Россия</h1>
+            <h2>Created by Ahmed Hamdy</h2>
+          </div>
+          <div class="right-footer">
+            <p>© 2025 Burger King Corporation. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Show popup on page load
+      document.addEventListener('DOMContentLoaded', function() {
+        const popup = document.getElementById('legalPopup');
+        const acceptBtn = document.getElementById('acceptBtn');
+        
+        // Show popup after 1 second
+        setTimeout(() => {
+          popup.classList.add('show');
+        }, 1000);
+        
+        // Close popup when button clicked
+        acceptBtn.addEventListener('click', function() {
+          popup.classList.remove('show');
+        });
+      });
+
+      // Scroll animation for AI features
+      const aiFeatures = document.querySelectorAll('.ai-feature');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.1 });
+      
+      aiFeatures.forEach(feature => {
+        observer.observe(feature);
+      });
+    </script>
+  </body>
+</html>
